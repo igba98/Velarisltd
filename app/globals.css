@@ -2,15 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Brand Green Scale centered on #257F2C */
+  --primary-50: #eaf4ec;
+  --primary-100: #d5e9d8;
+  --primary-200: #abd3b1;
+  --primary-300: #80bd8b;
+  --primary-400: #55a764;
+  --primary-500: #257F2C; /* brand */
+  --primary-600: #206f26;
+  --primary-700: #1a5e21;
+  --primary-800: #144d1b;
+  --primary-900: #0f3d15;
+  --primary-950: #092a0e;
+  --neutral-50: #f8f7f6;
+  --neutral-100: #f4f2f0;
+  --neutral-200: #e8e5e2;
+  --neutral-300: #d7d1cb;
+  --neutral-400: #c5bba8;
+  --neutral-500: #ac9f91;
+  --neutral-600: #897261;
+  --neutral-700: #715f51;
+  --neutral-800: #5d4d42;
+  --neutral-900: #4c3e35;
+  --neutral-950: #181411;
+  
+  /* Additional CSS variables used in components */
+  --text-primary: var(--neutral-950);
+  --text-secondary: var(--neutral-600);
+  --primary-green: var(--primary-500);
+  --dark-green: var(--primary-800);
+  --light-green: var(--primary-50);
+}
+
+body {
+  font-family: var(--font-urbanist), "Urbanist", sans-serif;
+  background-color: var(--neutral-50);
+  color: var(--neutral-950);
+}
+
 /* Urbanist Font Utilities */
-@layer utilities {
-  .font-urbanist-thin { font-weight: 100; }
-  .font-urbanist-extralight { font-weight: 200; }
-  .font-urbanist-light { font-weight: 300; }
-  .font-urbanist-normal { font-weight: 400; }
-  .font-urbanist-medium { font-weight: 500; }
-  .font-urbanist-semibold { font-weight: 600; }
-  .font-urbanist-bold { font-weight: 700; }
-  .font-urbanist-extrabold { font-weight: 800; }
-  .font-urbanist-black { font-weight: 900; }
+.font-urbanist {
+  font-family: var(--font-urbanist), "Urbanist", sans-serif;
 }
